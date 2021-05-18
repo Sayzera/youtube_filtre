@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta charset="UTF-8">
+    <title>Hello world</title>
+
+    <script src="jquery.js"></script>
+    <script src="./firebase/firebase-app.js"></script>
+    <script src="./firebase/firebase-analytics.js"></script>
+    <script src="./firebase/firebase-auth.js"></script>
+    <script src="./firebase/firebase-firestore.js"></script>
+    <script src="./firebase/config.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./css/popper.js"></script>
+    <script src="./css/bootstrap.js"></script>
+    <script src="popup.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="container p-2" style="width:500px">
+        <div class="d-flex justify-content-center">
+            <img src="./images/sezer_1.jpeg" class="rounded" width="30%" height="200px" alt="">
+        </div>
+
+        <div class="mt-2">
+            <div class="input-group mb-3">
+                <input type="text" id="channel-text" class="form-control" placeholder="Bir kanal ismi ekleyin" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="channel-btn">Ekle</button>
+              </div>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" value="1" type="checkbox" id="mod-input" >
+            <label class="form-check-label" for="flexSwitchCheckChecked" id="mod-text"></label>
+          </div>
+        
+        <div>
+            <table class="table" >
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Kanal Adı</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="eklenen-kanallar">
+                    
+                </tbody>
+              </table>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+    "name": "Youtube Filitre",
+    "version":"1.0",
+    "description": "sadece benim istediğim kanallar listelensin",
+    "icons": {
+        "128":"images/icon_128.png",
+        "48":"images/icon_48.png",
+        "16":"images/icon_16.png"
+    },
+    "browser_action": {
+        "default_icon": "images/icon.png",
+        "default_popup":"popup.html"
+    },
+    "options_page":"options.html",
+    "content_scripts": [
+        {   
+            "matches":["http://*/*","https://*/*"],
+            "js": ["jquery.js","background.js"]
+           
+        }
+    ],
+    "background": {
+        "scripts": ["jquery.js","eventPage.js"],
+        "persistent":false
+    },
+    "permissions": [
+        "storage",
+        "notifications",
+        "contextMenus"
+    ]
+
+
+
+}
